@@ -33,6 +33,7 @@ public class MyService {
 
     @Transactional
     public List<Task> getTasks(String assignee) {
+
         return taskService.createTaskQuery().taskAssignee(assignee).list();
     }
 
